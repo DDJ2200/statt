@@ -1,0 +1,10 @@
+
+Q] write R programing one-way ANOVA test is performed using mtcars dataset which comes preinstalled 
+which dplyr package between disp attribute,a continuous attribute and gear attribute,a categorical attribute
+
+Code:
+
+library(dplyr)
+ head(mtcars)
+ mtcars_aov <- aov(mtcars$disp~factor(mtcars$gear))
+ summary(mtcars_aov)
