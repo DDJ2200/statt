@@ -1,0 +1,43 @@
+
+#a.write R code to perform one sample test test at (alpha(symbol))=0.05
+#H0:mu=5
+#H1:mu=(not equal)5
+#alpha(symbol)=0.05
+#Defining sample vector
+
+Code:
+
+x=rnorm(100)
+#One sample T-Test
+t.test(x,mu=5)
+
+
+#b.write a R code for the two sample test at alpha(symbol)=0.05
+#H0:mu1=mu2
+#H1:mu1(=notequal)mu2
+defining sample vector
+
+Code:
+
+x=rnorm(100)
+y=rnorm(100)
+t.test(x,y)
+
+
+#two sample T-test
+#b.Write a Rcode for the two sample test at alpha(symbols)=0.05
+#H0:mu1=mu2
+H#1:mu1=(notequal)mu2
+
+code:
+
+t.text(x,y)
+
+
+#c.Write a Rcode for the two sample test at alpha(symbol)=0.01
+#H0:mu1=mu2
+#H1:mu1<mu2
+
+code:
+
+t.test(x,mu=2,conf.level = 0.99,alternative = 'greater')
