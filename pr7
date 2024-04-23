@@ -1,0 +1,22 @@
+
+#write a R code to perform Z-test for IQ data with mean 100 and s.d is 15 at 5%l.o.s
+
+The sample of IQ = (100,101,104,109,125,116,105,108,110)?
+
+code :
+
+library(TeachingDemos)
+  IQ.data=c(100,101,104,109,125,116,105,108,110)
+  z.test(IQ.data,100,15)
+
+#Two Sample mean test---
+#Write a R code to perform Z-test for IQ data1 and IQdata2 s.d is 15 and 20 at 5%l.o.s
+The sample of IQ data1=(100,101,104,109,125,116,105,108,110)
+The sample of IQ data2=(100,109,105,109,127,119,105,108,110)?
+
+code :
+
+library(TeachingDemos)
+  IQ.data1=c(100,100,101,104,109,125,116,105,108,110)
+  IQ.data2=c(100,109,105,109,127,119,105,108,110)
+  z.test(x=IQ.data1,y=IQ.data2,mu=0,sigma.x=15,sigma.y=20)
